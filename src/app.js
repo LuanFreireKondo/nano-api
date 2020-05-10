@@ -4,7 +4,9 @@ const cors = require('cors')
 
 const usersRouter = require('./routes/users/users.router')
 
-const port = 3000
+const PORT = 3000
+const HOST = '0.0.0.0'
+
 const app = express()
 
 const corsOptions = {
@@ -22,8 +24,8 @@ app.use(cors(corsOptions))
 
 app.use('/', log, usersRouter)
 
-app.listen(port, () => {
-  console.log(`app running in port: ${port}`)
+app.listen(PORT, HOST, () => {
+  console.log(`app running in: ${HOST}:${PORT}`)
 })
 
 module.exports = app
