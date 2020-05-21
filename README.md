@@ -11,7 +11,8 @@ simple API with Node.js and Express 👽
 
 Env | URL
 ------------ | -------------
-DEV | http://localhost:3000
+DEV | http://0.0.0.0:3000
+PROD | soon
 
 ### Install
 
@@ -41,7 +42,7 @@ npm test
 
 ``` bash
 
-http://localhost:3000/users
+http://0.0.0.0:3000/users
 
 ```
 
